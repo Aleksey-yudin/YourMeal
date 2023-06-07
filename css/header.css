@@ -4,6 +4,7 @@
     background-size: 611px;
     background-repeat: no-repeat;
     padding: 24px 0 30px 0;
+    margin-bottom: 30px;
 }
 
 .header__logo {
@@ -83,6 +84,8 @@
 @media (min-width: 1024px) {
     .header {
         background-size: 2880px;
+        padding-bottom: 63px;
+        margin-bottom: 40px;
     }
     
     .header__container {
@@ -107,5 +110,11 @@
 }
 
 @media (min-width: 1360px) {
-    
+    .header__container {
+        max-width: calc(784px + var(--padding-container) * 2);
+    }
+
+    .header__title-container {
+        padding-left: 346px;
+    }
 }
