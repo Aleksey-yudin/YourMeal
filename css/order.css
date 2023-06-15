@@ -63,3 +63,156 @@
 .order__open .order__wrap-list {
     display: block;
 }
+
+.order__list {
+    margin-bottom: 13px;
+}
+
+.order__item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f2f2f3;
+}
+
+.order__item:first-child {
+    border-top: 1px solid #f2f2f3;
+}
+
+.order__image {
+    width: 64px;
+    height: 52px;
+    border-radius: 8px;
+}
+
+.order__product {
+    flex-grow: 1;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.order__product-title {
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.order__product-weigth {
+    font-size: 12px;
+    color: #b1b1b1;
+}
+
+.order__product-price {
+    font-size: 13px;
+}
+
+.order__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 19px;
+}
+
+.order__submit {
+    width: 100%;
+    padding: 9px;
+    background-color: #ff7020;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    margin-bottom: 8px;
+}
+
+.order__wrap-apeal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order__close {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #b1b1b1;
+}
+
+.order__apeal {
+    min-height: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    padding-left: 32px;
+    background: url(../img/delivery.png) left/24px no-repeat;
+}
+
+.order__empty {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+}
+
+@media (min-width: 768px) {
+    .order {
+        width: 145px;
+        max-width: 300px;
+        transition: width 0.2s ease-in-out;
+    }
+
+    .order.order__open {
+        width: 300px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .order {
+        width: 300px;
+    }
+
+    .order__wrapper {
+        position: unset;
+    }
+
+    .order__wrap-title {
+        margin-bottom: 12px;
+    }
+
+    .order__title {
+        font-size: 24px;
+    }
+
+    .order__count {
+        width: 41px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .order__item {
+        padding: 15px 0;
+    }
+
+    .order__wrap-list {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .order__close {
+        display: none;
+    }
+
+    .order__total {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .order__submit {
+        padding: 11px;
+        height: 40px;
+        border-radius: 12px;
+        font-size: 16px;
+    }
+}
